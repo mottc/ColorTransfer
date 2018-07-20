@@ -113,7 +113,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument("-o", "--origin", required = True,help = "Path to the origin image")
     ap.add_argument("-r", "--reference", required = True,help = "Path to the reference image")
-    ap.add_argument("-n", "--new", required = True,help = "Path to the new image")
+    ap.add_argument("-g", "--generated", required = True,help = "Path to the generated image")
     args = vars(ap.parse_args())
 
-    color_transfer(args["origin"],args["reference"],args["new"])
+    color_transfer(args["origin"],args["reference"],args["generated"])
